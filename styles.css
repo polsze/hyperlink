@@ -1,0 +1,929 @@
+*::-webkit-scrollbar {display: none;} {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {display: none;}
+
+body {
+}
+
+/** HEADER **/
+
+.phone h1 {
+    text-align: center;
+    font-size: 1.2em; margin-top: 12px;
+    width: 100%;
+    font-family: 'Cambay', sans-serif;
+}
+
+.phone img {
+    margin-bottom: 3.5px;
+}
+
+.phone:hover {
+    color: rgb(245, 81, 57);
+}
+
+.navbar-toggler {
+    background: rgb(245, 81, 57);
+    padding: 1px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cont-nav {
+    margin-top: 5px;
+    background: rgb(30, 31, 34);
+    width:90%;
+}
+
+.nav-item {
+    margin: 15px;
+    padding: 0 15px;
+    font-size: 13px;
+    border-radius: 3px;
+    transition-duration: 1s;
+}
+
+.navbar ul li a{
+    position: relative;
+}
+
+.navbar ul li a::before,
+.navbar ul li a::after
+{
+    content: '';
+    border-bottom: 2px solid rgb(245, 81, 57);
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.navbar ul li a::before{
+    bottom: 1px;
+    width: 90%;
+    right: 0;
+}
+
+.navbar ul li a::after{
+    bottom: -10px;
+    width: 60%;
+    left: 0;
+}
+
+.navbar ul li a.activo::before,
+.navbar ul li a:hover::before{
+    opacity: 1;
+    width: 70%;
+}
+
+.navbar ul li a.activo::after,
+.navbar ul li a:hover::after{
+    opacity: 1;
+    width: 40%;
+}
+
+/** MAIN **/
+
+#cont-main {
+    display: flex;
+    flex-direction: column;
+   background-image: url(img/fnd5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    border-radius: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#cont-main h2 {
+    font-family: 'Bungee Spice', cursive;
+    text-align: center;
+}
+
+#cont-main img {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    border-radius: 50%;
+}
+
+#cont-main p {
+    text-align: center;
+}
+
+/** CONT MAIN 2 **/
+
+.title {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 5px;
+}
+
+#cont-main-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    background-image: url(img/fnd5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.card figure {
+    background-color: white;
+}
+
+.imghvr-hinge-up img {
+    background: white;
+    border-radius: 20px;
+}
+
+.ih-zoom-in {
+    font-size: 1.4em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.card-body h5 {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.card-text {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#img-figure {
+    background-color: white;
+}
+#img-figure img {
+    background-color: black;
+}
+
+
+/** LINE **/
+
+.hache {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    height: 2px;
+    background: #000;
+}
+
+/** CAROUSEL INNER**/
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+/** LAST SECTION **/
+
+.fnd {
+    height: 70vh;
+    background-image: url(img/fnd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: .7;
+}
+
+.fnd h2 {
+    color: yellow;
+    font-size: 2.4em;
+    text-align: right;
+    font-family: 'Rubik Dirt', cursive;
+    margin-right: 3px;
+}
+
+.fnd p {
+    color: yellow;
+    font-size: 1.5em;
+    text-align: right;
+    font-family: 'Dosis', sans-serif;
+    margin-right: 3px;
+}
+
+/** FEATURED WORKS **/ 
+
+.cont-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+    border-radius: 15px;
+    background: rgb(237, 236, 233);
+}
+
+.cont-works .card {
+    border: 2px solid black;
+}
+
+.card-body h5, p{
+    text-align: center;
+}
+
+
+
+/** FOOTER **/ 
+
+footer {
+    background: rgb(30, 31, 34);
+}
+
+.social {
+    display: flex;
+    margin:  5px;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px;
+}
+.social i {
+    margin: 10px;
+    font-size: 1.5em;
+    color: rgb(245, 81, 57);
+}
+
+.social i:hover {
+    color: #fff;
+}
+
+#imgfooter {
+    display: flex;
+    justify-content: center;
+}
+
+.last-text {
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/** ARROW **/
+
+.arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow a {
+    color: rgb(245, 81, 57);
+}
+
+/** SERVICES **/
+
+.title-main-service {
+    text-align: center;
+}
+
+.img-main-service {
+    height: 60vh;
+    background-image: url(img/res.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: .7;
+}
+
+
+
+.text-mainser {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 5px;
+}
+
+.img-main-service2{
+    height: 70vh;
+    background-image: url(img/nube.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: .7;
+}
+
+.img-main-service3 {
+    height: 70vh;
+    background-image: url(img/update2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: .7;
+}
+
+/** CONTACT & FORM  **/ 
+
+.card-header {
+    background: rgb(30, 31, 34);
+}
+
+.card-header h5{
+    color: #fff;
+    text-align: center;
+}
+
+#card-body {
+    background:rgb(30, 31, 34);
+}
+
+#card-body h5 {
+    color: #fff;
+}
+
+#card-body p {
+    color: #fff;
+}
+
+.text-muted  {
+    background: rgb(30, 31, 34);
+}
+
+#spancard {
+    display: flex;
+    justify-content: center;
+}
+
+#spancard span {
+    color: rgb(245, 81, 57);
+} 
+
+.cont-form {
+    margin: auto;
+    margin-top: 5px;
+    border: 1px solid red;
+    background:rgb(30, 31, 34);
+    width: 70%;
+    border-radius: 10px;
+}
+
+.cont-form h2 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#formu form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#formu input {
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    background: rgb(171, 169, 163);
+}
+
+#formu textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 5px  8px 5px;
+    border-radius: 10px;
+    background: rgb(171, 169, 163);
+}
+
+#formu label {
+    color: #fff;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3em;
+}
+
+.cont-card {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.card-body1 {
+    background: rgb(30, 31, 34);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.card-body a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: yellow;
+}
+
+/** BOTON ENVIAR **/
+
+#btnexp {
+    color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 0 0 rgba(145, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#btnexp::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -30px;
+    left: -80px;
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+#btnexp:hover {
+    transform: translate(0, -2px);
+    box-shadow: 10px -2px 25px 0 rgba(16, 226, 255, 0.5), -10px 10px 25px 0 rgba(183, 0, 255, 0.7);
+}
+
+#btnexp:hover::after{
+    transform: rotate(150deg);
+}
+
+#btnexp:hover::before{
+}
+
+.fnd p {
+    color: yellow;
+    font-size: 1.5em;
+    text-align: right;
+    font-family: 'Dosis', sans-serif;
+    margin-right: 3px;
+}
+
+/** RESPONSIVE DESING **/ 
+@media screen and (max-width: 1280px) {
+    #cont-main-2 {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 912px) {
+    
+    .phone {
+        font-size: 1.8em;
+    }
+    
+    .phone img {
+        height: 0.7em;
+    }
+    
+      .navbar-toggler-icon {
+        width: 2em;
+    height: 2.5em;
+    }
+    
+    .cont-nav {
+       font-size: 1.8em;
+    }
+    
+     .cont-nav img {
+       height: 3.5em !important;
+   }
+    
+   #cont-main p{ 
+       font-size: 1.9em;
+   }
+   
+   .nav-link {
+       font-size: 1.4em !important;
+   }
+   
+   .social i {
+        font-size: 1.3em;
+    }
+    
+   .card-body h5 {
+       font-size: 2em;
+   }
+   
+   .card {
+       width: 25em !important;
+   }
+   .card-body p {
+       font-size: 1.7em;
+   }
+   .card-footer span{
+       font-size: 1.4em;
+   }
+   .cont-form h2 {
+       font-size: 2.3em;
+   }
+   
+   .btn {
+       font-size: 1.7em;
+   }
+   #formu label {
+       font-size: 1.6em;
+   }
+    
+    #cont-main-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .last-text {
+        font-size: 1.6em;
+    }
+    
+    .arrow {
+        font-size: 1.8em;
+    }
+    
+     footer .social i {
+         font-size: 2.2em;
+     }
+     
+     .card-header h5 {
+         font-size: 2em;
+     }
+     
+     .text-mainser p {
+         font-size: 1.7em;
+     }
+     
+     .img-main-service {
+        height: 38vh;
+        background-attachment: fixed;
+    }
+    .img-main-service2 {
+        height: 38vh;
+        background-attachment: fixed;
+    }
+    .img-main-service3 {
+        height: 28vh;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #cont-main {
+        width: 60%;
+    } 
+    
+    #cont-main p {
+        font-size: 1.2em;
+    }
+    
+    .card-body h5 {
+        font-size: 1.4em;
+    }
+    
+    .card-body p {
+        font-size: 1.3em;
+    }
+    
+    .text-mainser p {
+        font-size: 1.4em;
+    }
+    
+    .last-text {
+        font-size: 1.1em;
+    }
+    
+    .img-main-service {
+        height: 38vh;
+        background-attachment: fixed;
+    }
+    .img-main-service2 {
+        height: 33vh;
+        background-attachment: fixed;
+    }
+    .img-main-service3 {
+        height: 33vh;
+        background-attachment: fixed;
+    }
+    
+    .arrow {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #cont-main {
+        width: 60%;
+    } 
+    
+    #cont-main p {
+        font-size: 1.2em;
+    }
+    
+    #cont-main-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .card-body h5 {
+        font-size: 1.4em;
+    }
+    
+    .card-body p {
+        font-size: 1.3em;
+    }
+    
+    .text-mainser p {
+        font-size: 1.4em;
+    }
+    
+    .last-text {
+        font-size: 1.1em;
+    }
+    
+    .img-main-service {
+        height: 34vh;
+        background-attachment: fixed;
+    }
+    .img-main-service2 {
+        height: 33vh;
+        background-attachment: fixed;
+    }
+    .img-main-service3 {
+        height: 27vh;
+        background-attachment: fixed;
+    }
+    
+    .arrow {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #cont-main h2 {
+        font-size:  1em;
+    }
+      #cont-main-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    width: 80%;
+    }
+}  
+
+@media screen and (max-width: 540px) {
+    .phone {
+        font-size: 0.8em;
+    }
+    
+     .cont-nav img {
+       height: 2em !important;
+   }
+   
+   .navbar-toggler-icon {
+        width: 1em;
+    height: 1.3em;
+    }
+     .nav-link {
+       font-size: 1em !important;
+   }
+   .social i {
+       font-size: 0.8em;
+   }
+    .fnd h2 {
+        font-size: 1.4em;
+    }
+    .fnd p {
+        font-size: 1.1em;
+    }
+    .img-main-service {
+        height: 25vh;
+        background-attachment: scroll;
+    }
+    .img-main-service2 {
+        height: 25vh;
+        background-attachment: scroll;
+    }
+    .img-main-service3{
+        height: 25vh;
+        background-attachment: scroll;
+    }
+    
+    footer .social i {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .phone h1  {
+        font-size: 1em;
+    }
+    .card-footer span{
+       font-size: 1em;
+   }
+     .cont-nav img {
+       height: 3em !important;
+   }
+    
+    #cont-main h2 {
+        font-size:  0.7em;
+    }
+     #cont-main-2 {
+        
+        background-image: none;
+    }
+    
+     
+    #cont-main p {
+        font-size: 1em;
+    }
+    .fnd h2 {
+        font-size: 1.2em;
+    }
+    .fnd p {
+        font-size: 1em;
+    }
+    
+    .card {
+       width: 15em !important;
+   }
+   
+   .card-text {
+       font-size: 1em !important;
+   }
+   
+     .phone {
+        font-size: 1.1em;
+    }
+    
+    .phone img {
+        height: 0.6em;
+    }
+    
+      .navbar-toggler-icon {
+        width: 1em;
+    height: 1.3em;
+    }
+     .nav-link {
+       font-size: 1em !important;
+   }
+   
+   .social i {
+        font-size: 0.8em;
+    }
+    .cont-nav {
+       font-size: 1.8em;
+    }
+    
+    
+   
+   footer .social i{
+       font-size: 1.25em;
+   }
+   
+   .last-text {
+       font-size: 0.8em;
+   }
+   
+   .text-mainser {
+       font-size: 0.7em;
+   }
+   
+   .card-header h5 {
+       font-size: 1.1em;
+   }
+   
+   .card-footer span{
+       font-size: 0.85em;
+   }
+   
+   .cont-form h2 {
+       font-size: 1.2em;
+   }
+   #formu label {
+       font-size: 0.9em;
+   }
+   
+   .btn {
+       font-size: 0.9em;
+   }
+}  
+
+@media screen and (max-width: 380px) {
+    #cont-main-2 {
+        width: 100%;
+        background-image: none;
+    }
+      .cont-nav img {
+       height: 2em !important;
+   }
+}
+
+@media screen and (max-width: 280px) {
+    #cont-main h2 {
+        font-size: 1.1em;
+    }
+    #cont-main p {
+        font-size: 1em;
+    }
+    .fnd h2 {
+        font-size: 1.2em;
+    }
+    .fnd p {
+        font-size: 1em;
+    }
+    
+    .card {
+       width: 15em !important;
+   }
+   
+   .card-text {
+       font-size: 1em !important;
+   }
+   
+     .phone {
+        font-size: 1.1em;
+    }
+    
+    .phone img {
+        height: 0.6em;
+    }
+    
+      .navbar-toggler-icon {
+        width: 1em;
+    height: 1.3em;
+    }
+     .nav-link {
+       font-size: 1em !important;
+   }
+   
+   .social i {
+        font-size: 0.8em;
+    }
+    .cont-nav {
+       font-size: 1.8em;
+    }
+    
+     .cont-nav img {
+       height: 2em !important;
+   }
+   
+   footer .social i{
+       font-size: 1.25em;
+   }
+   
+   .last-text {
+       font-size: 0.8em;
+   }
+   
+   .text-mainser {
+       font-size: 0.7em;
+   }
+   
+   .card-header h5 {
+       font-size: 1.1em;
+   }
+   
+   .card-footer span{
+       font-size: 0.85em;
+   }
+   
+   .cont-form h2 {
+       font-size: 1.2em;
+   }
+   #formu label {
+       font-size: 0.9em;
+   }
+   
+   .btn {
+       font-size: 0.9em;
+   }
+}
+
+
+
+
+
+

@@ -1,28 +1,50 @@
-*::-webkit-scrollbar {display: none;} {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar {display: none;}
 
-body {
-}
+/** PHONE **/
 
-/** HEADER **/
-
-.phone h1 {
+.phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
-    font-size: 1.2em; margin-top: 12px;
+}
+.phone h4 {
+    display: block;
+    text-align: center;
     width: 100%;
-    font-family: 'Cambay', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
 }
 
 .phone img {
     margin-bottom: 3.5px;
+    height: 10px;
+    width: 13px;
 }
 
-.phone:hover {
-    color: rgb(245, 81, 57);
+/** HEADER **/
+
+.cont-nav {
+    background: rgb(30, 31, 34);
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.nav-item {
+    margin: 15px;
+    padding: 0 15px;
+    font-size: 13px;
+    border-radius: 3px;
+    transition-duration: 1s;
 }
 
 .navbar-toggler {
@@ -34,21 +56,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.cont-nav {
-    margin-top: 5px;
-    background: rgb(30, 31, 34);
-    width:90%;
-}
-
-.nav-item {
-    margin: 15px;
-    padding: 0 15px;
-    font-size: 13px;
-    border-radius: 3px;
-    transition-duration: 1s;
 }
 
 .navbar ul li a{
@@ -89,90 +96,127 @@ body {
     width: 40%;
 }
 
+.navbar-collapse {
+    transition: 1s;
+}
+
 /** MAIN **/
 
 #cont-main {
+    height: auto;
     display: flex;
-    flex-direction: column;
-   background-image: url(img/fnd5.jpg);
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(9,75,121,1) 9%, rgba(35,24,224,1) 100%, rgba(0,212,255,1) 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 30%;
-    border-radius: 10px;
-    font-family: 'Titillium Web', sans-serif;
+    margin-top: 20px;
 }
 
-#cont-main h2 {
-    font-family: 'Bungee Spice', cursive;
+#cont-main a {
+    text-decoration: none;
+    color: #000;
+    transition: 1s;
+}
+
+#cont-main a:hover {
+    color: gold;
+}
+
+#cont-main h1 {
+    font-family: 'Russo One', sans-serif;
     text-align: center;
+    color: #fff;
 }
 
-#cont-main img {
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 1px;
+.social1 {
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.social1 i {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.social1 button {
     border-radius: 50%;
 }
 
-#cont-main p {
-    text-align: center;
+/** SERVICE CARDS  **/
+.card {
+    border: none;
+}
+#cards h2 {
+    font-family: 'PT Sans', sans-serif;
 }
 
-/** CONT MAIN 2 **/
-
-.title {
-    text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    padding: 5px;
-}
-
-#cont-main-2 {
+.cont-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 5px;
-    background-image: url(img/fnd5.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 70%;
-    border-radius: 10px;
-}
-
-.card figure {
-    background-color: white;
-}
-
-.imghvr-hinge-up img {
-    background: white;
-    border-radius: 20px;
-}
-
-.ih-zoom-in {
-    font-size: 1.4em;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.card-body h5 {
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
     text-align: center;
-    font-family: 'Titillium Web', sans-serif;
+    flex-wrap: wrap;
 }
 
-.card-text {
-    font-family: 'Titillium Web', sans-serif;
+.card-img-top {
+    transition: 1s;
+    border-radius: 5px;
 }
 
-#img-figure {
-    background-color: white;
-}
-#img-figure img {
-    background-color: black;
+.card-img-top:hover {
+    transform: scale(1.1);
 }
 
+.letters h2 {
+    text-align: center;
+    color: #000;
+}
 
+.letters ul li{
+    text-align: center;
+    list-style: none;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.lettersAbout {
+    width: 60%;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 40px;
+    color: #000;
+    
+}
+
+.lettersAbout h2 a {
+    text-decoration: none;
+    transition: 1s;
+}
+
+.lettersAbout h2 a:hover {
+    color: gold;
+}
+
+.list-group li  {
+    border: none;
+}
+/** PROJECTS **/
+.lettersProject {
+    text-align: center;
+}
+
+.lettersProject ul{
+    list-style: none;
+}
 /** LINE **/
-
 .hache {
     display: flex;
     justify-content: center;
@@ -183,69 +227,44 @@ hr {
     background: #000;
 }
 
-/** CAROUSEL INNER**/
+.title {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
 
 .carousel-inner {
+    max-height: 80vh;
     border-radius: 10px;
 }
 
-/** LAST SECTION **/
+.carousel-item {
+    box-shadow: 5px 0 5px 0;
+} 
 
-.fnd {
-    height: 70vh;
-    background-image: url(img/fnd.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: .7;
-}
-
-.fnd h2 {
-    color: yellow;
-    font-size: 2.4em;
-    text-align: right;
-    font-family: 'Rubik Dirt', cursive;
-    margin-right: 3px;
-}
-
-.fnd p {
-    color: yellow;
-    font-size: 1.5em;
-    text-align: right;
-    font-family: 'Dosis', sans-serif;
-    margin-right: 3px;
-}
-
-/** FEATURED WORKS **/ 
-
-.cont-works {
+/** CLIENTES **/
+.contClients{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid black;
-    width: 70%;
-    height: 60vh;
-    margin: auto;
-    border-radius: 15px;
-    background: rgb(237, 236, 233);
-}
-
-.cont-works .card {
-    border: 2px solid black;
-}
-
-.card-body h5, p{
     text-align: center;
+    align-items: center;
+    align-content: center;
 }
 
+.card-img-top2 {
+    transition: 1s;
+    border-radius: 5px;
+}
 
+.card-img-top2:hover {
+    transform: scale(1.1);
+}
 
 /** FOOTER **/ 
 
 footer {
     background: rgb(30, 31, 34);
+    width: 100%;
 }
 
 .social {
@@ -255,14 +274,16 @@ footer {
     text-decoration: none;
     padding: 15px;
 }
+
 .social i {
     margin: 10px;
     font-size: 1.5em;
-    color: rgb(245, 81, 57);
+    color: rgb(25, 102, 227);
+    transition: 1s;
 }
 
 .social i:hover {
-    color: #fff;
+    color: rgb(118, 195, 245);
 }
 
 #imgfooter {
@@ -276,6 +297,27 @@ footer {
     font-size: 0.9em;
 }
 
+/** LOGO WSP FIXED **/
+
+.socialFix {
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+}
+
+.socialFix i {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.socialFix button {
+    border-radius: 50%;
+}
+
 /** ARROW **/
 
 .arrow {
@@ -284,156 +326,7 @@ footer {
 }
 
 .arrow a {
-    color: rgb(245, 81, 57);
-}
-
-/** SERVICES **/
-
-.title-main-service {
-    text-align: center;
-}
-
-.img-main-service {
-    height: 60vh;
-    background-image: url(img/res.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    opacity: .7;
-}
-
-
-
-.text-mainser {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: auto;
-    font-family: 'Titillium Web', sans-serif;
-    margin-top: 5px;
-}
-
-.img-main-service2{
-    height: 70vh;
-    background-image: url(img/nube.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    opacity: .7;
-}
-
-.img-main-service3 {
-    height: 70vh;
-    background-image: url(img/update2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    opacity: .7;
-}
-
-/** CONTACT & FORM  **/ 
-
-.card-header {
-    background: rgb(30, 31, 34);
-}
-
-.card-header h5{
-    color: #fff;
-    text-align: center;
-}
-
-#card-body {
-    background:rgb(30, 31, 34);
-}
-
-#card-body h5 {
-    color: #fff;
-}
-
-#card-body p {
-    color: #fff;
-}
-
-.text-muted  {
-    background: rgb(30, 31, 34);
-}
-
-#spancard {
-    display: flex;
-    justify-content: center;
-}
-
-#spancard span {
-    color: rgb(245, 81, 57);
-} 
-
-.cont-form {
-    margin: auto;
-    margin-top: 5px;
-    border: 1px solid red;
-    background:rgb(30, 31, 34);
-    width: 70%;
-    border-radius: 10px;
-}
-
-.cont-form h2 {
-    text-align: center;
-    color: #fff;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#formu form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#formu input {
-    margin: auto;
-    width: 50%;
-    border-radius: 10px;
-    background: rgb(171, 169, 163);
-}
-
-#formu textarea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin: 0 5px  8px 5px;
-    border-radius: 10px;
-    background: rgb(171, 169, 163);
-}
-
-#formu label {
-    color: #fff;
-    text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.3em;
-}
-
-.cont-card {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-}
-
-.card-body1 {
-    background: rgb(30, 31, 34);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-}
-.card-body a {
-    text-decoration: none;
-    font-size: 1.1em;
-    color: yellow;
+    color: rgb(25, 102, 227);
 }
 
 /** BOTON ENVIAR **/
@@ -472,458 +365,113 @@ footer {
 }
 
 .fnd p {
-    color: yellow;
+    color: #E8A724;
     font-size: 1.5em;
     text-align: right;
     font-family: 'Dosis', sans-serif;
     margin-right: 3px;
 }
 
-/** RESPONSIVE DESING **/ 
-@media screen and (max-width: 1280px) {
-    #cont-main-2 {
-        width: 90%;
-    }
+/** FORMULARIO **/
+
+.btnBack:hover {
+    color: #E8A724;
+    transition: 0.5s;
 }
 
-
-@media screen and (max-width: 912px) {
-    
-    .phone {
-        font-size: 1.8em;
-    }
-    
-    .phone img {
-        height: 0.7em;
-    }
-    
-      .navbar-toggler-icon {
-        width: 2em;
-    height: 2.5em;
-    }
-    
-    .cont-nav {
-       font-size: 1.8em;
-    }
-    
-     .cont-nav img {
-       height: 3.5em !important;
-   }
-    
-   #cont-main p{ 
-       font-size: 1.9em;
-   }
-   
-   .nav-link {
-       font-size: 1.4em !important;
-   }
-   
-   .social i {
-        font-size: 1.3em;
-    }
-    
-   .card-body h5 {
-       font-size: 2em;
-   }
-   
-   .card {
-       width: 25em !important;
-   }
-   .card-body p {
-       font-size: 1.7em;
-   }
-   .card-footer span{
-       font-size: 1.4em;
-   }
-   .cont-form h2 {
-       font-size: 2.3em;
-   }
-   
-   .btn {
-       font-size: 1.7em;
-   }
-   #formu label {
-       font-size: 1.6em;
-   }
-    
-    #cont-main-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .last-text {
-        font-size: 1.6em;
-    }
-    
-    .arrow {
-        font-size: 1.8em;
-    }
-    
-     footer .social i {
-         font-size: 2.2em;
-     }
-     
-     .card-header h5 {
-         font-size: 2em;
-     }
-     
-     .text-mainser p {
-         font-size: 1.7em;
-     }
-     
-     .img-main-service {
-        height: 38vh;
-        background-attachment: fixed;
-    }
-    .img-main-service2 {
-        height: 38vh;
-        background-attachment: fixed;
-    }
-    .img-main-service3 {
-        height: 28vh;
-        background-attachment: fixed;
-    }
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-@media screen and (max-width: 840px) {
-    #cont-main {
-        width: 60%;
-    } 
-    
-    #cont-main p {
-        font-size: 1.2em;
-    }
-    
-    .card-body h5 {
-        font-size: 1.4em;
-    }
-    
-    .card-body p {
-        font-size: 1.3em;
-    }
-    
-    .text-mainser p {
-        font-size: 1.4em;
-    }
-    
-    .last-text {
-        font-size: 1.1em;
-    }
-    
-    .img-main-service {
-        height: 38vh;
-        background-attachment: fixed;
-    }
-    .img-main-service2 {
-        height: 33vh;
-        background-attachment: fixed;
-    }
-    .img-main-service3 {
-        height: 33vh;
-        background-attachment: fixed;
-    }
-    
-    .arrow {
-        font-size: 1.5em;
-    }
+.logo {
+    text-align: center;
+    font-size: 3em;
 }
 
-@media screen and (max-width: 768px) {
-    #cont-main {
-        width: 60%;
-    } 
-    
-    #cont-main p {
-        font-size: 1.2em;
-    }
-    
-    #cont-main-2 {
+.logo span {
+    color: #B70E21;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+    color: #fff;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+.contact-form h3 {
+    color: #fff;
+    text-align: center;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: #fff;
+}
+/** RESPONSIVE DESIGN **/
+
+@media screen and (max-width: 540px){
+    .cont-cartas {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         align-content: center;
     }
-    
-    .card-body h5 {
-        font-size: 1.4em;
-    }
-    
-    .card-body p {
-        font-size: 1.3em;
-    }
-    
-    .text-mainser p {
-        font-size: 1.4em;
-    }
-    
-    .last-text {
-        font-size: 1.1em;
-    }
-    
-    .img-main-service {
-        height: 34vh;
-        background-attachment: fixed;
-    }
-    .img-main-service2 {
-        height: 33vh;
-        background-attachment: fixed;
-    }
-    .img-main-service3 {
-        height: 27vh;
-        background-attachment: fixed;
-    }
-    
-    .arrow {
-        font-size: 1.5em;
-    }
 }
-
-@media screen and (max-width: 690px) {
-    #cont-main h2 {
-        font-size:  1em;
-    }
-      #cont-main-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    width: 80%;
-    }
-}  
-
-@media screen and (max-width: 540px) {
-    .phone {
-        font-size: 0.8em;
-    }
-    
-     .cont-nav img {
-       height: 2em !important;
-   }
-   
-   .navbar-toggler-icon {
-        width: 1em;
-    height: 1.3em;
-    }
-     .nav-link {
-       font-size: 1em !important;
-   }
-   .social i {
-       font-size: 0.8em;
-   }
-    .fnd h2 {
-        font-size: 1.4em;
-    }
-    .fnd p {
-        font-size: 1.1em;
-    }
-    .img-main-service {
-        height: 25vh;
-        background-attachment: scroll;
-    }
-    .img-main-service2 {
-        height: 25vh;
-        background-attachment: scroll;
-    }
-    .img-main-service3{
-        height: 25vh;
-        background-attachment: scroll;
-    }
-    
-    footer .social i {
-        font-size: 1.3em;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .phone h1  {
-        font-size: 1em;
-    }
-    .card-footer span{
-       font-size: 1em;
-   }
-     .cont-nav img {
-       height: 3em !important;
-   }
-    
-    #cont-main h2 {
-        font-size:  0.7em;
-    }
-     #cont-main-2 {
-        
-        background-image: none;
-    }
-    
-     
-    #cont-main p {
-        font-size: 1em;
-    }
-    .fnd h2 {
-        font-size: 1.2em;
-    }
-    .fnd p {
-        font-size: 1em;
-    }
-    
-    .card {
-       width: 15em !important;
-   }
-   
-   .card-text {
-       font-size: 1em !important;
-   }
-   
-     .phone {
-        font-size: 1.1em;
-    }
-    
-    .phone img {
-        height: 0.6em;
-    }
-    
-      .navbar-toggler-icon {
-        width: 1em;
-    height: 1.3em;
-    }
-     .nav-link {
-       font-size: 1em !important;
-   }
-   
-   .social i {
-        font-size: 0.8em;
-    }
-    .cont-nav {
-       font-size: 1.8em;
-    }
-    
-    
-   
-   footer .social i{
-       font-size: 1.25em;
-   }
-   
-   .last-text {
-       font-size: 0.8em;
-   }
-   
-   .text-mainser {
-       font-size: 0.7em;
-   }
-   
-   .card-header h5 {
-       font-size: 1.1em;
-   }
-   
-   .card-footer span{
-       font-size: 0.85em;
-   }
-   
-   .cont-form h2 {
-       font-size: 1.2em;
-   }
-   #formu label {
-       font-size: 0.9em;
-   }
-   
-   .btn {
-       font-size: 0.9em;
-   }
-}  
-
-@media screen and (max-width: 380px) {
-    #cont-main-2 {
-        width: 100%;
-        background-image: none;
-    }
-      .cont-nav img {
-       height: 2em !important;
-   }
-}
-
-@media screen and (max-width: 280px) {
-    #cont-main h2 {
-        font-size: 1.1em;
-    }
-    #cont-main p {
-        font-size: 1em;
-    }
-    .fnd h2 {
-        font-size: 1.2em;
-    }
-    .fnd p {
-        font-size: 1em;
-    }
-    
-    .card {
-       width: 15em !important;
-   }
-   
-   .card-text {
-       font-size: 1em !important;
-   }
-   
-     .phone {
-        font-size: 1.1em;
-    }
-    
-    .phone img {
-        height: 0.6em;
-    }
-    
-      .navbar-toggler-icon {
-        width: 1em;
-    height: 1.3em;
-    }
-     .nav-link {
-       font-size: 1em !important;
-   }
-   
-   .social i {
-        font-size: 0.8em;
-    }
-    .cont-nav {
-       font-size: 1.8em;
-    }
-    
-     .cont-nav img {
-       height: 2em !important;
-   }
-   
-   footer .social i{
-       font-size: 1.25em;
-   }
-   
-   .last-text {
-       font-size: 0.8em;
-   }
-   
-   .text-mainser {
-       font-size: 0.7em;
-   }
-   
-   .card-header h5 {
-       font-size: 1.1em;
-   }
-   
-   .card-footer span{
-       font-size: 0.85em;
-   }
-   
-   .cont-form h2 {
-       font-size: 1.2em;
-   }
-   #formu label {
-       font-size: 0.9em;
-   }
-   
-   .btn {
-       font-size: 0.9em;
-   }
-}
-
-
-
-
-
-
